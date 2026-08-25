@@ -3,18 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rodrigo Gomes (Isheriff) — Arquiteto de IA & Engenharia em Produção</title>
-  <meta name="description" content="Portfólio de Engenharia e Projetos em Produção de Rodrigo Gomes (Isheriff). Sistemas distribuídos, governança de agentes de IA e infraestrutura soberana. Menos teses, mais código real.">
+  <title>Rodrigo Gomes (Isheriff) — Arquiteto Principal de Cloud & IA Soberana</title>
+  <meta name="description" content="Portfólio Executivo e Projetos em Produção de Rodrigo Gomes (Isheriff). Sistemas distribuídos, governança determinística de agentes de IA e infraestrutura soberana.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #040507;
-      --card-bg: rgba(13, 16, 23, 0.85);
-      --card-hover: rgba(20, 25, 36, 0.98);
+      --bg: #030406;
+      --card-bg: rgba(10, 13, 19, 0.88);
+      --card-hover: rgba(16, 21, 30, 0.98);
       --border: rgba(255, 255, 255, 0.08);
-      --border-gold: rgba(212, 175, 55, 0.35);
+      --border-accent: rgba(220, 38, 38, 0.35);
+      --red: #ef4444;
+      --red-glow: rgba(239, 68, 68, 0.25);
       --gold: #d4af37;
       --gold-light: #f3e5ab;
       --accent-cyan: #00f2fe;
@@ -37,33 +39,40 @@
       min-height: 100vh;
       line-height: 1.6;
       overflow-x: hidden;
+      background-image: 
+        radial-gradient(circle at 50% 15%, rgba(30, 41, 59, 0.35) 0%, transparent 65%),
+        linear-gradient(to bottom, transparent 80%, #030406 100%);
     }
 
-    /* Top Navigation */
+    /* Cyber Matrix Top Nav */
     header {
       max-width: 1440px;
       margin: 0 auto;
-      padding: 30px 32px;
+      padding: 28px 36px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       position: relative;
-      z-index: 20;
+      z-index: 30;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     }
 
     .brand {
-      font-family: 'Cinzel', serif;
-      font-size: 22px;
-      font-weight: 700;
-      letter-spacing: 0.25em;
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      font-weight: 800;
+      letter-spacing: 0.22em;
       text-transform: uppercase;
       color: #ffffff;
       text-decoration: none;
-      transition: color 0.3s;
+      display: flex;
+      align-items: center;
+      gap: 4px;
     }
 
-    .brand:hover {
-      color: var(--gold);
+    .brand span.accent-red {
+      color: var(--red);
+      font-weight: 900;
     }
 
     .nav-links {
@@ -76,8 +85,8 @@
       color: var(--text-dim);
       text-decoration: none;
       font-size: 11px;
-      font-weight: 600;
-      letter-spacing: 0.15em;
+      font-weight: 700;
+      letter-spacing: 0.16em;
       text-transform: uppercase;
       transition: color 0.2s;
     }
@@ -100,7 +109,7 @@
     }
 
     .social-icons a:hover {
-      color: var(--gold);
+      color: var(--red);
       transform: translateY(-2px);
     }
 
@@ -110,86 +119,105 @@
       fill: currentColor;
     }
 
-    /* Hero Section with Prominent Stage Photo */
-    .hero-wrapper {
-      position: relative;
-      min-height: 85vh;
-      display: flex;
-      align-items: center;
-      background-color: #040507;
-      background-image: 
-        linear-gradient(to right, #040507 0%, rgba(4, 5, 7, 0.92) 38%, rgba(4, 5, 7, 0.1) 70%, transparent 100%),
-        linear-gradient(to bottom, transparent 65%, #040507 100%),
-        linear-gradient(to top, transparent 85%, #040507 100%),
-        url('assets/hero_bg.png');
-      background-position: center, center, center, right top;
-      background-repeat: no-repeat;
-      background-size: cover, cover, cover, cover;
-    }
-
-    @media (max-width: 960px) {
-      .hero-wrapper {
-        background-image: 
-          linear-gradient(to bottom, rgba(4, 5, 7, 0.85) 0%, rgba(4, 5, 7, 0.98) 75%, #040507 100%),
-          url('assets/hero_bg.png');
-        background-position: center top;
-        background-size: cover;
-        min-height: auto;
-        padding: 40px 0 60px;
-      }
-      .nav-links {
-        display: none;
-      }
-    }
-
-    .hero-container {
+    /* Hero Section Styled Like the Book Cover */
+    .hero-stage {
       max-width: 1440px;
-      width: 100%;
       margin: 0 auto;
-      padding: 40px 32px;
+      padding: 50px 36px 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
       position: relative;
       z-index: 10;
     }
 
-    .hero-content {
-      max-width: 740px;
+    .hero-header-block {
+      margin-bottom: 30px;
     }
 
-    .credentials-pills {
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-      margin-bottom: 20px;
-    }
-
-    .cred-pill {
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 0.08em;
+    .hero-super-title {
+      font-size: clamp(34px, 5.5vw, 68px);
+      font-weight: 900;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
-      padding: 5px 12px;
-      border-radius: 9999px;
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid var(--border);
-      color: var(--gold-light);
+      color: #ffffff;
+      line-height: 1.08;
+      margin-bottom: 8px;
     }
 
-    .cred-pill-gold {
-      background: rgba(212, 175, 55, 0.12);
-      border-color: rgba(212, 175, 55, 0.4);
-      color: var(--gold);
+    .hero-super-title span.accent-char {
+      color: var(--red);
+      position: relative;
+      display: inline-block;
     }
 
-    .cred-pill-live {
-      background: rgba(16, 185, 129, 0.1);
-      border-color: rgba(16, 185, 129, 0.3);
-      color: var(--green);
+    .hero-sub-title {
+      font-family: 'Fira Code', monospace;
+      font-size: clamp(13px, 1.8vw, 20px);
+      font-weight: 600;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: #94a3b8;
+      margin-bottom: 24px;
+    }
+
+    /* Center Stage Figure Composition */
+    .figure-showcase {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      gap: 40px;
+      width: 100%;
+      max-width: 1280px;
+      margin: 10px auto 30px;
+      position: relative;
+    }
+
+    @media (max-width: 980px) {
+      .figure-showcase {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+    }
+
+    /* Left Bio Column */
+    .stage-bio-left {
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .stage-bio-left p {
+      font-size: 14.5px;
+      color: #cbd5e1;
+      line-height: 1.7;
+      font-weight: 300;
+    }
+
+    .stage-bio-left p b {
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    .cyber-badge {
       display: inline-flex;
       align-items: center;
-      gap: 6px;
+      gap: 8px;
+      font-family: 'Fira Code', monospace;
+      font-size: 11px;
+      color: var(--green);
+      background: rgba(16, 185, 129, 0.08);
+      border: 1px solid rgba(16, 185, 129, 0.25);
+      padding: 6px 14px;
+      border-radius: 4px;
+      width: fit-content;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
     }
 
-    .pill-pulse {
+    .pulse-dot {
       width: 6px;
       height: 6px;
       border-radius: 50%;
@@ -197,112 +225,185 @@
       box-shadow: 0 0 8px var(--green);
     }
 
-    .hero-content h1 {
-      font-size: clamp(34px, 4.2vw, 54px);
-      font-weight: 900;
-      letter-spacing: -0.03em;
-      line-height: 1.12;
-      margin-bottom: 22px;
-      color: #ffffff;
-    }
-
-    .hero-content h1 span {
-      background: linear-gradient(135deg, #ffffff 40%, var(--gold-light) 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    .hero-bio {
-      color: var(--text-dim);
-      font-size: 15px;
-      line-height: 1.75;
-      margin-bottom: 24px;
-      font-weight: 300;
-    }
-
-    .hero-bio b {
-      color: #ffffff;
-      font-weight: 600;
-    }
-
-    .hero-manifesto {
-      font-size: 13px;
-      font-weight: 600;
-      color: var(--gold);
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      margin-bottom: 34px;
-      display: block;
-      border-left: 2px solid var(--gold);
-      padding-left: 14px;
-    }
-
-    .hero-actions {
+    /* Center Framed Photo with Cyber Glow */
+    .center-frame {
+      position: relative;
       display: flex;
-      gap: 16px;
+      justify-content: center;
       align-items: center;
     }
 
-    @media (max-width: 640px) {
-      .hero-actions {
-        flex-direction: column;
-        align-items: stretch;
+    .center-frame::before {
+      content: '';
+      position: absolute;
+      inset: -15px;
+      background: radial-gradient(circle, rgba(239, 68, 68, 0.2) 0%, rgba(0, 242, 254, 0.05) 50%, transparent 70%);
+      border-radius: 20px;
+      z-index: 1;
+      filter: blur(20px);
+    }
+
+    .portrait-card {
+      position: relative;
+      z-index: 2;
+      width: 320px;
+      height: 440px;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.95);
+      background: #0d1117;
+    }
+
+    @media (max-width: 480px) {
+      .portrait-card {
+        width: 280px;
+        height: 380px;
       }
     }
 
-    .btn-gold {
-      background: linear-gradient(135deg, #d4af37 0%, #aa820a 100%);
-      color: #050608;
-      padding: 14px 32px;
+    .portrait-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+      filter: contrast(1.05) brightness(0.95);
+    }
+
+    .portrait-overlay-gradient {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(3, 4, 6, 0.85) 0%, rgba(3, 4, 6, 0.1) 40%, transparent 70%);
+      pointer-events: none;
+    }
+
+    /* Right Credentials Stack */
+    .credentials-stack-right {
+      text-align: right;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      font-family: 'Fira Code', monospace;
+    }
+
+    @media (max-width: 980px) {
+      .credentials-stack-right {
+        text-align: left;
+      }
+    }
+
+    .cred-entry {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 8px;
+    }
+
+    @media (max-width: 980px) {
+      .cred-entry {
+        justify-content: flex-start;
+      }
+    }
+
+    .cred-entry span.dot-sep {
+      color: var(--red);
+      font-weight: 900;
+    }
+
+    .cred-role {
+      font-size: 11px;
+      color: var(--text-muted);
+      letter-spacing: 0.05em;
+      margin-top: 2px;
+    }
+
+    /* Bottom Centered Slogan */
+    .hero-slogan-bottom {
+      margin-top: 30px;
+      max-width: 800px;
+    }
+
+    .slogan-text {
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #e2e8f0;
+      margin-bottom: 24px;
+    }
+
+    .slogan-text span.accent-red {
+      color: var(--red);
+    }
+
+    .hero-action-buttons {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+    }
+
+    @media (max-width: 600px) {
+      .hero-action-buttons {
+        flex-direction: column;
+      }
+    }
+
+    .btn-red-action {
+      background: linear-gradient(135deg, #ef4444 0%, #b91c1c 100%);
+      color: #ffffff;
+      padding: 14px 34px;
       border-radius: 6px;
       font-size: 12px;
       font-weight: 700;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
       text-decoration: none;
       transition: all 0.3s;
+      box-shadow: 0 10px 30px -5px rgba(239, 68, 68, 0.4);
       border: none;
       cursor: pointer;
-      text-align: center;
-      box-shadow: 0 10px 30px -5px rgba(212, 175, 55, 0.35);
     }
 
-    .btn-gold:hover {
+    .btn-red-action:hover {
       transform: translateY(-2px);
-      box-shadow: 0 15px 35px -5px rgba(212, 175, 55, 0.5);
+      box-shadow: 0 15px 35px -5px rgba(239, 68, 68, 0.6);
     }
 
-    .btn-outline {
-      background: rgba(14, 17, 24, 0.6);
-      color: var(--text-main);
+    .btn-outline-cyber {
+      background: rgba(15, 23, 42, 0.6);
+      color: #ffffff;
       padding: 14px 28px;
       border-radius: 6px;
       font-size: 12px;
       font-weight: 600;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
       text-decoration: none;
       border: 1px solid var(--border);
       transition: all 0.2s;
-      text-align: center;
       backdrop-filter: blur(10px);
     }
 
-    .btn-outline:hover {
+    .btn-outline-cyber:hover {
       border-color: rgba(255, 255, 255, 0.3);
       background: rgba(255, 255, 255, 0.08);
     }
 
-    /* Production Verified Metrics Bar */
+    /* Metrics Grid */
     .metrics-bar {
       max-width: 1440px;
-      margin: -25px auto 60px;
-      padding: 0 32px;
-      position: relative;
-      z-index: 15;
+      margin: 40px auto 60px;
+      padding: 0 36px;
     }
 
     .metrics-grid {
-      background: rgba(13, 16, 23, 0.9);
+      background: var(--card-bg);
       border: 1px solid var(--border);
       border-radius: 16px;
       padding: 24px 32px;
@@ -344,13 +445,13 @@
       font-family: 'Fira Code', monospace;
       font-size: 26px;
       font-weight: 700;
-      color: var(--gold-light);
+      color: #ffffff;
       margin-bottom: 4px;
     }
 
     .metric-val span {
       font-size: 14px;
-      color: var(--gold);
+      color: var(--red);
     }
 
     .metric-label {
@@ -361,21 +462,20 @@
       color: var(--text-muted);
     }
 
-    /* Proof of Work Title & Filter */
+    /* Projects Section */
     .selector-section {
       text-align: center;
-      margin: 80px auto 40px;
+      margin: 60px auto 40px;
       padding: 0 24px;
-      position: relative;
     }
 
     .selector-tag {
       display: inline-block;
       font-family: 'Fira Code', monospace;
       font-size: 11px;
-      color: var(--green);
-      background: rgba(16, 185, 129, 0.08);
-      border: 1px solid rgba(16, 185, 129, 0.25);
+      color: var(--red);
+      background: rgba(239, 68, 68, 0.08);
+      border: 1px solid rgba(239, 68, 68, 0.25);
       padding: 4px 12px;
       border-radius: 4px;
       margin-bottom: 14px;
@@ -384,10 +484,10 @@
     }
 
     .selector-title {
-      font-family: 'Cinzel', serif;
-      font-size: 26px;
-      font-weight: 700;
-      letter-spacing: 0.1em;
+      font-size: 28px;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
       color: #ffffff;
       margin-bottom: 12px;
     }
@@ -401,7 +501,7 @@
 
     .toggle-pill {
       display: inline-flex;
-      background: #0f131a;
+      background: #0a0d14;
       border: 1px solid var(--border);
       border-radius: 9999px;
       padding: 5px;
@@ -416,7 +516,7 @@
       padding: 10px 24px;
       border-radius: 9999px;
       font-size: 11px;
-      font-weight: 600;
+      font-weight: 700;
       cursor: pointer;
       text-transform: uppercase;
       letter-spacing: 0.08em;
@@ -425,15 +525,14 @@
 
     .toggle-btn.active {
       background: #ffffff;
-      color: #050608;
-      font-weight: 700;
+      color: #030406;
     }
 
     /* Projects Grid */
     .projects-grid {
       max-width: 1440px;
-      margin: 0 auto 140px;
-      padding: 0 32px;
+      margin: 0 auto 120px;
+      padding: 0 36px;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 28px;
@@ -473,14 +572,14 @@
       left: 0;
       right: 0;
       height: 2px;
-      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+      background: linear-gradient(90deg, transparent, var(--red), transparent);
       opacity: 0;
       transition: opacity 0.3s;
     }
 
     .project-card:hover {
       background: var(--card-hover);
-      border-color: rgba(212, 175, 55, 0.4);
+      border-color: rgba(239, 68, 68, 0.4);
       transform: translateY(-5px);
       box-shadow: 0 25px 50px -15px rgba(0, 0, 0, 0.75);
     }
@@ -501,12 +600,12 @@
       width: 46px;
       height: 46px;
       border-radius: 12px;
-      background: rgba(212, 175, 55, 0.08);
-      border: 1px solid rgba(212, 175, 55, 0.25);
+      background: rgba(239, 68, 68, 0.08);
+      border: 1px solid rgba(239, 68, 68, 0.25);
       display: flex;
       align-items: center;
       justify-content: center;
-      color: var(--gold);
+      color: var(--red);
       transition: transform 0.3s;
     }
 
@@ -541,7 +640,7 @@
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.1em;
-      color: var(--gold);
+      color: var(--red);
       margin-bottom: 6px;
     }
 
@@ -582,7 +681,7 @@
     .card-link-text {
       font-size: 12px;
       font-weight: 700;
-      color: var(--gold-light);
+      color: #ffffff;
       display: flex;
       align-items: center;
       gap: 6px;
@@ -591,6 +690,11 @@
       padding-top: 14px;
       border-top: 1px solid var(--border);
       width: 100%;
+      transition: color 0.2s;
+    }
+
+    .project-card:hover .card-link-text {
+      color: var(--red);
     }
 
     /* Footer */
@@ -602,8 +706,8 @@
     }
 
     .footer-brand {
-      font-family: 'Cinzel', serif;
-      font-size: 20px;
+      font-size: 16px;
+      font-weight: 800;
       letter-spacing: 0.25em;
       text-transform: uppercase;
       margin-bottom: 24px;
@@ -629,7 +733,7 @@
     }
 
     .footer-links a:hover {
-      color: var(--gold);
+      color: var(--red);
     }
 
     .footer-copy {
@@ -642,10 +746,10 @@
 <body>
 
   <header>
-    <a href="#" class="brand">RODRIGO GOMES</a>
+    <a href="#" class="brand">RODRIGO<span class="accent-red">.</span>GOMES</a>
     <nav class="nav-links">
       <a href="#metricas">Métricas</a>
-      <a href="#projetos">Projetos Reais</a>
+      <a href="#projetos">Projetos em Produção</a>
       <a href="https://abscore.app" target="_blank">ABS Core</a>
       <a href="https://cortex.abscore.app" target="_blank">CORTEX</a>
       <a href="https://oconnector.tech" target="_blank">Holding</a>
@@ -663,28 +767,70 @@
     </div>
   </header>
 
-  <div class="hero-wrapper">
-    <div class="hero-container">
-      <div class="hero-content">
-        <div class="credentials-pills">
-          <span class="cred-pill cred-pill-live"><span class="pill-pulse"></span>Projetos em Produção</span>
-          <span class="cred-pill cred-pill-gold">Founder @ OConnector</span>
-          <span class="cred-pill">GLG Council Member</span>
-          <span class="cred-pill">Ex-Apple (9y)</span>
-          <span class="cred-pill">Ex-AWS</span>
-        </div>
-        <h1>Engenharia Comprovada em Produção. <span>Menos Teses, Mais Código.</span></h1>
-        <p class="hero-bio">
-          Arquiteto Principal de Cloud, Sistemas Distribuídos e Governança de Agentes de IA. Com mais de 14 anos de experiência construindo infraestruturas globais sob rígidos SLAs (Apple, AWS), fundei a <b>OConnector Technology I.S.</b> para resolver o maior gargalo da IA corporativa: <b>a execução determinística, segura e com memória persistente</b>.
+  <!-- Hero Section Following Reference Hierarchy -->
+  <section class="hero-stage">
+    <div class="hero-header-block">
+      <h1 class="hero-super-title">CIBER<span class="accent-char">.</span>GOVERN<span class="accent-char">A</span>NÇA</h1>
+      <div class="hero-sub-title">ARQUITETO.PRINCIPAL.IA</div>
+    </div>
+
+    <!-- Center Stage 3-Column Figure Composition -->
+    <div class="figure-showcase">
+      <!-- Left Column: Bio & Core Mission -->
+      <div class="stage-bio-left">
+        <div class="cyber-badge"><span class="pulse-dot"></span>Sistemas Ativos em Produção</div>
+        <p>
+          Arquiteto Principal de Cloud, Sistemas Distribuídos e Governança de Agentes de IA com mais de 14 anos de experiência construindo infraestruturas globais sob rígidos SLAs (Apple, AWS).
         </p>
-        <span class="hero-manifesto">350k+ Ações Auditadas · Kernel WASM 1.2ms · Zero Falhas de Segurança</span>
-        <div class="hero-actions">
-          <a href="#projetos" class="btn-gold">Ver Projetos em Produção</a>
-          <a href="https://cortex.abscore.app/docs" target="_blank" class="btn-outline">Documentação CORTEX</a>
+        <p>
+          Fundador da <b>OConnector Technology I.S.</b>, desenvolvedor do <b>ABS Core</b> (governança determinística em WASM 1.2ms) e do <b>CORTEX</b> (memória soberana via MCP).
+        </p>
+      </div>
+
+      <!-- Center Column: Framed Stage Portrait -->
+      <div class="center-frame">
+        <div class="portrait-card">
+          <img src="assets/hero_bg.png" alt="Rodrigo Gomes (Isheriff) palestrando">
+          <div class="portrait-overlay-gradient"></div>
+        </div>
+      </div>
+
+      <!-- Right Column: Authority Stack with Dot Separators -->
+      <div class="credentials-stack-right">
+        <div>
+          <div class="cred-entry">EX<span class="dot-sep">.</span>APPLE<span class="dot-sep">.</span>(9Y)</div>
+          <div class="cred-role">Sustentação Global & Alta Criticidade</div>
+        </div>
+        <div>
+          <div class="cred-entry">EX<span class="dot-sep">.</span>AWS</div>
+          <div class="cred-role">Enterprise Cloud & Zero Trust</div>
+        </div>
+        <div>
+          <div class="cred-entry">GLG<span class="dot-sep">.</span>COUNCIL<span class="dot-sep">.</span>MEMBER</div>
+          <div class="cred-role">Cloud & AI Governance Advisory</div>
+        </div>
+        <div>
+          <div class="cred-entry">FOUNDER<span class="dot-sep">.</span>OCONNECTOR</div>
+          <div class="cred-role">Inova Simples CNPJ: 65.162.322/0001-82</div>
+        </div>
+        <div>
+          <div class="cred-entry">RUST<span class="dot-sep">.</span>WASM<span class="dot-sep">.</span>EDGE</div>
+          <div class="cred-role">Kernel Determinístico 1.2ms</div>
         </div>
       </div>
     </div>
-  </div>
+
+    <!-- Bottom Centered Slogan & Action -->
+    <div class="hero-slogan-bottom">
+      <div class="slogan-text">
+        ENGENHARIA DETERMINÍSTICA PARA EXECUÇÃO DE <span class="accent-red">AGENTES DE IA</span> EM PRODUÇÃO
+      </div>
+      <div class="hero-action-buttons">
+        <a href="#projetos" class="btn-red-action">Ver Projetos em Produção</a>
+        <a href="https://cortex.abscore.app/docs" target="_blank" class="btn-outline-cyber">Documentação CORTEX</a>
+      </div>
+    </div>
+  </section>
 
   <!-- Real Production Metrics -->
   <div class="metrics-bar" id="metricas">
