@@ -4,21 +4,114 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rodrigo Gomes (Isheriff) — Arquiteto Principal de Cloud & IA Soberana</title>
-  <meta name="description" content="Portfólio Executivo e Projetos em Produção de Rodrigo Gomes (Isheriff). Sistemas distribuídos, governança determinística de agentes de IA e infraestrutura soberana.">
+  <meta name="description" content="Portfólio Executivo e Projetos em Produção de Rodrigo Gomes (Isheriff). Sistemas distribuídos de missão crítica (ex-Apple 9Y, AWS, Stanford GSB EMBA, GLG Council), governança determinística de agentes de IA em Rust/WASM (1.2ms) e arquitetura CORTEX.">
+  <meta name="author" content="Rodrigo Gomes (Isheriff)">
+  <meta name="theme-color" content="#030406">
+  <meta name="robots" content="index, follow">
+
+  <!-- Canonical & Social URLs -->
+  <link rel="canonical" href="https://eusheriff.me">
+  <meta property="og:url" content="https://eusheriff.me">
+
+  <!-- Open Graph / LinkedIn / WhatsApp / Facebook -->
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Rodrigo Gomes (Isheriff) — Arquiteto Principal de Cloud & IA Soberana">
+  <meta property="og:description" content="Portfólio Executivo e Projetos em Produção: Sistemas distribuídos globais (ex-Apple 9Y, AWS, Stanford GSB), governança determinística de agentes em WASM (1.2ms) e ecossistema CORTEX / ABS Core.">
+  <meta property="og:image" content="assets/hero_poster_v2.jpg">
+  <meta property="og:site_name" content="Rodrigo Gomes (Isheriff) · OpenPage">
+  <meta property="profile:first_name" content="Rodrigo">
+  <meta property="profile:last_name" content="Gomes">
+  <meta property="profile:username" content="isheriff">
+
+  <!-- Twitter / X Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Rodrigo Gomes (Isheriff) — Arquiteto Principal de Cloud & IA Soberana">
+  <meta name="twitter:description" content="Sistemas distribuídos de alta criticidade, governança determinística de agentes em WASM (1.2ms) e ecossistema de memória persistente CORTEX.">
+  <meta name="twitter:image" content="assets/hero_poster_v2.jpg">
+
+  <!-- High-Definition Cyber SVG Favicon & Icons -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="alternate icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/favicon.svg">
+
+  <!-- Schema.org JSON-LD Structured Data for AI & Search Engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://eusheriff.me/#person",
+        "name": "Rodrigo Gomes",
+        "alternateName": "Isheriff",
+        "jobTitle": "Principal Cloud & AI Architect",
+        "description": "Arquiteto Principal de Cloud, Sistemas Distribuídos e Governança de Agentes de IA com mais de 14 anos de experiência.",
+        "sameAs": [
+          "https://oconnector.tech",
+          "https://www.linkedin.com/in/eusheriff/",
+          "https://github.com/eusheriff",
+          "https://instagram.com/eusheriff/"
+        ],
+        "alumniOf": [
+          {
+            "@type": "Organization",
+            "name": "Apple"
+          },
+          {
+            "@type": "Organization",
+            "name": "Amazon Web Services (AWS)"
+          },
+          {
+            "@type": "EducationalOrganization",
+            "name": "Stanford Graduate School of Business (GSB)"
+          }
+        ],
+        "memberOf": {
+          "@type": "Organization",
+          "name": "Gerson Lehrman Group (GLG Council)"
+        },
+        "worksFor": {
+          "@type": "Organization",
+          "name": "OConnector Technology Inova Simples",
+          "taxID": "65.162.322/0001-82"
+        },
+        "knowsAbout": [
+          "Cloud Architecture",
+          "AI Agent Governance",
+          "Rust",
+          "WebAssembly (WASM)",
+          "Model Context Protocol (MCP)",
+          "Zero Trust Security",
+          "Distributed Systems"
+        ]
+      },
+      {
+        "@type": "ProfilePage",
+        "@id": "https://eusheriff.me/#webpage",
+        "url": "https://eusheriff.me",
+        "name": "Rodrigo Gomes (Isheriff) — Arquiteto Principal de Cloud & IA Soberana",
+        "mainEntity": {
+          "@id": "https://eusheriff.me/#person"
+        }
+      }
+    ]
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <style>
     :root {
       --bg: #030406;
-      --card-bg: rgba(10, 13, 19, 0.88);
-      --card-hover: rgba(16, 21, 30, 0.98);
+      --card-bg: rgba(10, 13, 19, 0.85);
+      --card-hover: rgba(18, 24, 35, 0.98);
       --border: rgba(255, 255, 255, 0.08);
-      --border-accent: rgba(220, 38, 38, 0.35);
+      --border-accent: rgba(239, 68, 68, 0.35);
       --red: #ef4444;
-      --red-glow: rgba(239, 68, 68, 0.25);
+      --red-glow: rgba(239, 68, 68, 0.3);
       --gold: #d4af37;
-      --gold-light: #f3e5ab;
       --accent-cyan: #00f2fe;
       --text-main: #f8fafc;
       --text-dim: #94a3b8;
@@ -32,34 +125,97 @@
       padding: 0;
     }
 
-    body {
-      background-color: var(--bg);
+    html, body {
+      height: 100%;
+      background-color: #030406;
       color: var(--text-main);
-      font-family: 'Inter', sans-serif;
-      min-height: 100vh;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
       line-height: 1.6;
       overflow-x: hidden;
-      background-image: 
-        radial-gradient(circle at 50% 15%, rgba(30, 41, 59, 0.35) 0%, transparent 65%),
-        linear-gradient(to bottom, transparent 80%, #030406 100%);
+      -webkit-font-smoothing: antialiased;
+      position: relative;
     }
 
-    /* Cyber Matrix Top Nav */
-    header {
+    /* High-Performance Animated Video Background */
+    .video-background-wrap {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 0;
+      overflow: hidden;
+      pointer-events: none;
+      background: transparent;
+    }
+
+    .video-background-wrap video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: 100%;
+      height: 100%;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+      opacity: 0.82;
+      filter: saturate(1.2) contrast(1.15) brightness(0.95);
+      display: block;
+    }
+
+    .video-background-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 1;
+      pointer-events: none;
+      background: 
+        radial-gradient(circle at 50% 35%, rgba(3, 4, 6, 0.2) 0%, rgba(3, 4, 6, 0.6) 65%, #030406 100%),
+        linear-gradient(to bottom, rgba(3, 4, 6, 0.15) 0%, rgba(3, 4, 6, 0.75) 85%, #030406 100%);
+    }
+
+    .video-background-grid {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 2;
+      pointer-events: none;
+      opacity: 0.12;
+      background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+      background-size: 52px 52px;
+    }
+
+    /* Main Viewport Container (Ultra-Clean Screen) */
+    .app-viewport {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      z-index: 10;
+      padding: 24px 32px;
       max-width: 1440px;
       margin: 0 auto;
-      padding: 28px 36px;
+    }
+
+    /* Minimalist Top Nav */
+    header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      position: relative;
-      z-index: 30;
+      padding-bottom: 20px;
       border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     }
 
     .brand {
-      font-family: 'Inter', sans-serif;
-      font-size: 15px;
+      font-size: 14px;
       font-weight: 800;
       letter-spacing: 0.22em;
       text-transform: uppercase;
@@ -75,133 +231,7 @@
       font-weight: 900;
     }
 
-    .nav-links {
-      display: flex;
-      gap: 28px;
-      align-items: center;
-    }
-
-    .nav-links a {
-      color: var(--text-dim);
-      text-decoration: none;
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      transition: color 0.2s;
-    }
-
-    .nav-links a:hover {
-      color: #ffffff;
-    }
-
-    .social-icons {
-      display: flex;
-      gap: 16px;
-      align-items: center;
-    }
-
-    .social-icons a {
-      color: var(--text-dim);
-      transition: color 0.2s, transform 0.2s;
-      display: flex;
-      align-items: center;
-    }
-
-    .social-icons a:hover {
-      color: var(--red);
-      transform: translateY(-2px);
-    }
-
-    .social-icons svg {
-      width: 16px;
-      height: 16px;
-      fill: currentColor;
-    }
-
-    /* Hero Section Styled Like the Book Cover */
-    .hero-stage {
-      max-width: 1440px;
-      margin: 0 auto;
-      padding: 50px 36px 40px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      position: relative;
-      z-index: 10;
-    }
-
-    .hero-header-block {
-      margin-bottom: 30px;
-    }
-
-    .hero-super-title {
-      font-size: clamp(34px, 5.5vw, 68px);
-      font-weight: 900;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: #ffffff;
-      line-height: 1.08;
-      margin-bottom: 8px;
-    }
-
-    .hero-super-title span.accent-char {
-      color: var(--red);
-      position: relative;
-      display: inline-block;
-    }
-
-    .hero-sub-title {
-      font-family: 'Fira Code', monospace;
-      font-size: clamp(13px, 1.8vw, 20px);
-      font-weight: 600;
-      letter-spacing: 0.35em;
-      text-transform: uppercase;
-      color: #94a3b8;
-      margin-bottom: 24px;
-    }
-
-    /* Center Stage Figure Composition */
-    .figure-showcase {
-      display: grid;
-      grid-template-columns: 1fr auto 1fr;
-      align-items: center;
-      gap: 40px;
-      width: 100%;
-      max-width: 1280px;
-      margin: 10px auto 30px;
-      position: relative;
-    }
-
-    @media (max-width: 980px) {
-      .figure-showcase {
-        grid-template-columns: 1fr;
-        gap: 30px;
-      }
-    }
-
-    /* Left Bio Column */
-    .stage-bio-left {
-      text-align: left;
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-
-    .stage-bio-left p {
-      font-size: 14.5px;
-      color: #cbd5e1;
-      line-height: 1.7;
-      font-weight: 300;
-    }
-
-    .stage-bio-left p b {
-      color: #ffffff;
-      font-weight: 600;
-    }
-
-    .cyber-badge {
+    .status-badge {
       display: inline-flex;
       align-items: center;
       gap: 8px;
@@ -211,10 +241,8 @@
       background: rgba(16, 185, 129, 0.08);
       border: 1px solid rgba(16, 185, 129, 0.25);
       padding: 6px 14px;
-      border-radius: 4px;
-      width: fit-content;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
+      border-radius: 9999px;
+      letter-spacing: 0.04em;
     }
 
     .pulse-dot {
@@ -223,854 +251,1314 @@
       border-radius: 50%;
       background: var(--green);
       box-shadow: 0 0 8px var(--green);
+      animation: pulseGlow 2s infinite ease-in-out;
     }
 
-    /* Center Framed Photo with Cyber Glow */
-    .center-frame {
-      position: relative;
+    @keyframes pulseGlow {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.3); opacity: 0.6; }
+    }
+
+    .nav-actions {
       display: flex;
-      justify-content: center;
       align-items: center;
+      gap: 16px;
     }
 
-    .center-frame::before {
-      content: '';
-      position: absolute;
-      inset: -15px;
-      background: radial-gradient(circle, rgba(239, 68, 68, 0.2) 0%, rgba(0, 242, 254, 0.05) 50%, transparent 70%);
-      border-radius: 20px;
-      z-index: 1;
-      filter: blur(20px);
+    .social-link {
+      color: var(--text-dim);
+      text-decoration: none;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      padding: 6px;
+      border-radius: 6px;
     }
 
-    .portrait-card {
-      position: relative;
-      z-index: 2;
-      width: 320px;
-      height: 440px;
-      border-radius: 16px;
-      overflow: hidden;
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.95);
-      background: #0d1117;
+    .social-link:hover {
+      color: #ffffff;
+      transform: translateY(-2px);
     }
 
-    @media (max-width: 480px) {
-      .portrait-card {
-        width: 280px;
-        height: 380px;
-      }
+    .social-link svg {
+      width: 17px;
+      height: 17px;
+      fill: currentColor;
     }
 
-    .portrait-card img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center top;
-      display: block;
-      filter: contrast(1.05) brightness(0.95);
-    }
-
-    .portrait-overlay-gradient {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(to top, rgba(3, 4, 6, 0.85) 0%, rgba(3, 4, 6, 0.1) 40%, transparent 70%);
-      pointer-events: none;
-    }
-
-    /* Right Credentials Stack */
-    .credentials-stack-right {
-      text-align: right;
+    /* Core Stage & Executive Identity */
+    .hero-center {
+      text-align: center;
       display: flex;
       flex-direction: column;
-      gap: 12px;
-      font-family: 'Fira Code', monospace;
-    }
-
-    @media (max-width: 980px) {
-      .credentials-stack-right {
-        text-align: left;
-      }
-    }
-
-    .cred-entry {
-      font-size: 13px;
-      font-weight: 700;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: #ffffff;
-      display: flex;
       align-items: center;
-      justify-content: flex-end;
-      gap: 8px;
+      margin: auto 0;
+      padding: 40px 10px;
     }
 
-    @media (max-width: 980px) {
-      .cred-entry {
-        justify-content: flex-start;
-      }
-    }
-
-    .cred-entry span.dot-sep {
-      color: var(--red);
+    .hero-super-title {
+      font-size: clamp(38px, 6.5vw, 78px);
       font-weight: 900;
-    }
-
-    .cred-role {
-      font-size: 11px;
-      color: var(--text-muted);
-      letter-spacing: 0.05em;
-      margin-top: 2px;
-    }
-
-    /* Bottom Centered Slogan */
-    .hero-slogan-bottom {
-      margin-top: 30px;
-      max-width: 800px;
-    }
-
-    .slogan-text {
-      font-size: 15px;
-      font-weight: 700;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      color: #e2e8f0;
-      margin-bottom: 24px;
-    }
-
-    .slogan-text span.accent-red {
-      color: var(--red);
-    }
-
-    .hero-action-buttons {
-      display: flex;
-      gap: 16px;
-      justify-content: center;
-    }
-
-    @media (max-width: 600px) {
-      .hero-action-buttons {
-        flex-direction: column;
-      }
-    }
-
-    .btn-red-action {
-      background: linear-gradient(135deg, #ef4444 0%, #b91c1c 100%);
-      color: #ffffff;
-      padding: 14px 34px;
-      border-radius: 6px;
-      font-size: 12px;
-      font-weight: 700;
       letter-spacing: 0.12em;
       text-transform: uppercase;
-      text-decoration: none;
-      transition: all 0.3s;
-      box-shadow: 0 10px 30px -5px rgba(239, 68, 68, 0.4);
-      border: none;
-      cursor: pointer;
-    }
-
-    .btn-red-action:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 15px 35px -5px rgba(239, 68, 68, 0.6);
-    }
-
-    .btn-outline-cyber {
-      background: rgba(15, 23, 42, 0.6);
       color: #ffffff;
-      padding: 14px 28px;
-      border-radius: 6px;
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      text-decoration: none;
-      border: 1px solid var(--border);
-      transition: all 0.2s;
-      backdrop-filter: blur(10px);
-    }
-
-    .btn-outline-cyber:hover {
-      border-color: rgba(255, 255, 255, 0.3);
-      background: rgba(255, 255, 255, 0.08);
-    }
-
-    /* Metrics Grid */
-    .metrics-bar {
-      max-width: 1440px;
-      margin: 40px auto 60px;
-      padding: 0 36px;
-    }
-
-    .metrics-grid {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 24px 32px;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 24px;
-      backdrop-filter: blur(20px);
-      box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.85);
-    }
-
-    @media (max-width: 860px) {
-      .metrics-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    @media (max-width: 520px) {
-      .metrics-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    .metric-item {
-      text-align: center;
-      border-right: 1px solid var(--border);
-    }
-
-    .metric-item:last-child {
-      border-right: none;
-    }
-
-    @media (max-width: 860px) {
-      .metric-item:nth-child(2) {
-        border-right: none;
-      }
-    }
-
-    .metric-val {
-      font-family: 'Fira Code', monospace;
-      font-size: 26px;
-      font-weight: 700;
-      color: #ffffff;
-      margin-bottom: 4px;
-    }
-
-    .metric-val span {
-      font-size: 14px;
-      color: var(--red);
-    }
-
-    .metric-label {
-      font-size: 11px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--text-muted);
-    }
-
-    /* Projects Section */
-    .selector-section {
-      text-align: center;
-      margin: 60px auto 40px;
-      padding: 0 24px;
-    }
-
-    .selector-tag {
-      display: inline-block;
-      font-family: 'Fira Code', monospace;
-      font-size: 11px;
-      color: var(--red);
-      background: rgba(239, 68, 68, 0.08);
-      border: 1px solid rgba(239, 68, 68, 0.25);
-      padding: 4px 12px;
-      border-radius: 4px;
-      margin-bottom: 14px;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-
-    .selector-title {
-      font-size: 28px;
-      font-weight: 900;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: #ffffff;
+      line-height: 1.05;
       margin-bottom: 12px;
+      text-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
     }
 
-    .selector-subtitle {
-      font-size: 14px;
-      color: var(--text-dim);
-      max-width: 650px;
-      margin: 0 auto 28px;
+    .hero-super-title span.accent-char {
+      color: var(--red);
     }
 
-    .toggle-pill {
-      display: inline-flex;
-      background: #0a0d14;
-      border: 1px solid var(--border);
-      border-radius: 9999px;
-      padding: 5px;
-      gap: 6px;
-      box-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.5);
-    }
-
-    .toggle-btn {
-      background: transparent;
-      border: none;
-      color: var(--text-dim);
-      padding: 10px 24px;
-      border-radius: 9999px;
-      font-size: 11px;
-      font-weight: 700;
-      cursor: pointer;
+    .hero-sub-title {
+      font-family: 'Fira Code', monospace;
+      font-size: clamp(12px, 1.8vw, 17px);
+      font-weight: 600;
+      letter-spacing: 0.3em;
       text-transform: uppercase;
-      letter-spacing: 0.08em;
-      transition: all 0.25s ease;
+      color: #94a3b8;
+      margin-bottom: 16px;
     }
 
-    .toggle-btn.active {
-      background: #ffffff;
-      color: #030406;
+    .hero-tagline {
+      font-size: clamp(13px, 1.4vw, 15px);
+      color: #cbd5e1;
+      max-width: 720px;
+      margin-bottom: 42px;
+      line-height: 1.65;
+      font-weight: 300;
     }
 
-    /* Projects Grid */
-    .projects-grid {
-      max-width: 1440px;
-      margin: 0 auto 120px;
-      padding: 0 36px;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 28px;
+    .hero-tagline b {
+      color: #ffffff;
+      font-weight: 600;
     }
 
-    @media (max-width: 1080px) {
-      .projects-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    @media (max-width: 680px) {
-      .projects-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    .project-card {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 32px 28px;
+    /* Cyber Command Buttons Hub (Animated Interactive Cards) */
+    .command-hub {
       display: flex;
-      flex-direction: column;
-      text-decoration: none;
-      color: inherit;
-      backdrop-filter: blur(14px);
-      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+      max-width: 1060px;
+      width: 100%;
+    }
+
+    .hub-btn {
+      background: rgba(10, 13, 19, 0.78);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 14px;
+      padding: 16px 20px;
+      color: var(--text-main);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-align: left;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.6);
+      flex: 1 1 calc(25% - 16px);
+      min-width: 240px;
+      max-width: 260px;
       position: relative;
       overflow: hidden;
     }
 
-    .project-card::before {
+    .hub-btn::before {
       content: '';
       position: absolute;
       top: 0;
       left: 0;
-      right: 0;
+      width: 100%;
       height: 2px;
       background: linear-gradient(90deg, transparent, var(--red), transparent);
       opacity: 0;
       transition: opacity 0.3s;
     }
 
-    .project-card:hover {
-      background: var(--card-hover);
+    .hub-btn:hover {
+      background: rgba(18, 24, 35, 0.95);
       border-color: rgba(239, 68, 68, 0.4);
-      transform: translateY(-5px);
-      box-shadow: 0 25px 50px -15px rgba(0, 0, 0, 0.75);
+      transform: translateY(-4px) scale(1.02);
+      box-shadow: 0 20px 40px -10px rgba(239, 68, 68, 0.2);
     }
 
-    .project-card:hover::before {
+    .hub-btn:hover::before {
       opacity: 1;
     }
 
-    .card-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      margin-bottom: 18px;
-      width: 100%;
-    }
-
-    .card-icon {
-      width: 46px;
-      height: 46px;
-      border-radius: 12px;
+    .hub-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
       background: rgba(239, 68, 68, 0.08);
-      border: 1px solid rgba(239, 68, 68, 0.25);
+      border: 1px solid rgba(239, 68, 68, 0.2);
       display: flex;
       align-items: center;
       justify-content: center;
       color: var(--red);
+      flex-shrink: 0;
       transition: transform 0.3s;
     }
 
-    .project-card:hover .card-icon {
-      transform: scale(1.08);
+    .hub-btn:hover .hub-icon {
+      transform: scale(1.1);
+      background: rgba(239, 68, 68, 0.15);
     }
 
-    .card-icon svg {
-      width: 22px;
-      height: 22px;
+    .hub-icon svg {
+      width: 20px;
+      height: 20px;
       stroke: currentColor;
       fill: none;
-      stroke-width: 1.8;
+      stroke-width: 2;
       stroke-linecap: round;
       stroke-linejoin: round;
     }
 
-    .card-status {
-      font-family: 'Fira Code', monospace;
-      font-size: 10px;
-      font-weight: 600;
-      text-transform: uppercase;
-      padding: 4px 8px;
-      border-radius: 4px;
-      background: rgba(16, 185, 129, 0.1);
-      border: 1px solid rgba(16, 185, 129, 0.3);
-      color: var(--green);
-    }
-
-    .card-tag {
-      font-size: 11px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--red);
-      margin-bottom: 6px;
-    }
-
-    .card-title {
-      font-size: 19px;
-      font-weight: 800;
-      color: #ffffff;
-      margin-bottom: 12px;
-      letter-spacing: -0.01em;
-    }
-
-    .card-desc {
-      font-size: 13.5px;
-      color: var(--text-dim);
-      line-height: 1.65;
-      margin-bottom: 20px;
-      flex-grow: 1;
-      font-weight: 300;
-    }
-
-    .card-stack {
+    .hub-text {
       display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      margin-bottom: 22px;
+      flex-direction: column;
     }
 
-    .stack-badge {
-      font-family: 'Fira Code', monospace;
-      font-size: 10px;
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      color: #cbd5e1;
-      padding: 3px 8px;
-      border-radius: 4px;
-    }
-
-    .card-link-text {
-      font-size: 12px;
-      font-weight: 700;
+    .hub-title {
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
       color: #ffffff;
       display: flex;
       align-items: center;
       gap: 6px;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      padding-top: 14px;
-      border-top: 1px solid var(--border);
-      width: 100%;
+    }
+
+    .hub-desc {
+      font-size: 11px;
+      color: var(--text-dim);
+      font-family: 'Fira Code', monospace;
+      margin-top: 2px;
+    }
+
+    /* Minimal Footer */
+    footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      font-size: 11px;
+      color: var(--text-muted);
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .footer-left {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+    }
+
+    .footer-right {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+    }
+
+    .footer-right a {
+      color: var(--text-muted);
+      text-decoration: none;
       transition: color 0.2s;
     }
 
-    .project-card:hover .card-link-text {
+    .footer-right a:hover {
       color: var(--red);
     }
 
-    /* Footer */
-    footer {
-      border-top: 1px solid var(--border);
-      padding: 70px 24px 50px;
-      text-align: center;
-      background: #020305;
+    /* Video Toggle Controller Button */
+    .video-control-btn {
+      background: rgba(10, 13, 19, 0.7);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 9999px;
+      padding: 6px 12px;
+      font-size: 10px;
+      font-weight: 600;
+      font-family: 'Fira Code', monospace;
+      letter-spacing: 0.08em;
+      color: var(--text-dim);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
     }
 
-    .footer-brand {
-      font-size: 16px;
-      font-weight: 800;
-      letter-spacing: 0.25em;
+    .video-control-btn:hover {
+      color: #ffffff;
+      border-color: var(--red);
+      background: rgba(18, 24, 35, 0.95);
+    }
+
+    .video-control-btn svg {
+      width: 10px;
+      height: 10px;
+      fill: currentColor;
+    }
+
+    /* ==========================================================================
+       FLOATING WINDOW MODAL SYSTEM (Glassmorphism & Cyber Command Windows)
+       ========================================================================== */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(3, 4, 6, 0.85);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .modal-backdrop.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .modal-window {
+      background: rgba(11, 15, 23, 0.95);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 20px;
+      width: 100%;
+      max-width: 960px;
+      max-height: 85vh;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 30px 70px -15px rgba(0, 0, 0, 0.95), 0 0 30px rgba(239, 68, 68, 0.15);
+      transform: scale(0.95) translateY(15px);
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .modal-backdrop.active .modal-window {
+      transform: scale(1) translateY(0);
+    }
+
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 28px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(15, 21, 32, 0.6);
+    }
+
+    .modal-title-wrap {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .modal-tag {
+      font-family: 'Fira Code', monospace;
+      font-size: 10px;
+      color: var(--red);
+      background: rgba(239, 68, 68, 0.1);
+      border: 1px solid rgba(239, 68, 68, 0.3);
+      padding: 4px 10px;
+      border-radius: 4px;
       text-transform: uppercase;
-      margin-bottom: 24px;
+    }
+
+    .modal-title {
+      font-size: 17px;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
       color: #ffffff;
     }
 
-    .footer-links {
+    .modal-close-btn {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: var(--text-dim);
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
       display: flex;
+      align-items: center;
       justify-content: center;
-      gap: 28px;
-      margin-bottom: 36px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .modal-close-btn:hover {
+      background: rgba(239, 68, 68, 0.2);
+      color: #ffffff;
+      border-color: var(--red);
+    }
+
+    .modal-close-btn svg {
+      width: 14px;
+      height: 14px;
+      stroke: currentColor;
+      stroke-width: 2.5;
+    }
+
+    .modal-body {
+      padding: 28px;
+      overflow-y: auto;
+      flex-grow: 1;
+    }
+
+    /* Custom Dark Scrollbar */
+    .modal-body::-webkit-scrollbar {
+      width: 6px;
+    }
+    .modal-body::-webkit-scrollbar-track {
+      background: rgba(0, 0, 0, 0.2);
+    }
+    .modal-body::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 3px;
+    }
+    .modal-body::-webkit-scrollbar-thumb:hover {
+      background: var(--red);
+    }
+
+    /* Specific Modal Layouts */
+    /* 1. Metrics Grid Inside Modal */
+    .modal-metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .m-card {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .m-val {
+      font-family: 'Fira Code', monospace;
+      font-size: 28px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 4px;
+    }
+
+    .m-val span {
+      color: var(--red);
+      font-size: 15px;
+    }
+
+    .m-label {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-muted);
+    }
+
+    .m-desc {
+      font-size: 12px;
+      color: var(--text-dim);
+      margin-top: 8px;
+      line-height: 1.5;
+    }
+
+    /* 2. Projects Grid Inside Modal */
+    .modal-filter-pills {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 20px;
       flex-wrap: wrap;
     }
 
-    .footer-links a {
-      color: var(--text-muted);
-      text-decoration: none;
+    .filter-btn {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      color: var(--text-dim);
+      padding: 6px 14px;
+      border-radius: 9999px;
       font-size: 11px;
       font-weight: 600;
-      letter-spacing: 0.12em;
+      cursor: pointer;
       text-transform: uppercase;
-      transition: color 0.2s;
+      letter-spacing: 0.04em;
+      transition: all 0.2s;
     }
 
-    .footer-links a:hover {
+    .filter-btn.active, .filter-btn:hover {
+      background: var(--red);
+      color: #ffffff;
+      border-color: var(--red);
+    }
+
+    .modal-projects-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .proj-item {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 12px;
+      padding: 20px;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.25s;
+    }
+
+    .proj-item:hover {
+      background: rgba(255, 255, 255, 0.05);
+      border-color: rgba(239, 68, 68, 0.4);
+      transform: translateY(-3px);
+    }
+
+    .proj-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+
+    .proj-tag {
+      font-size: 10px;
+      font-weight: 700;
+      color: var(--red);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .proj-status {
+      font-family: 'Fira Code', monospace;
+      font-size: 9px;
+      padding: 2px 6px;
+      border-radius: 3px;
+      background: rgba(16, 185, 129, 0.1);
+      color: var(--green);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+    }
+
+    .proj-title {
+      font-size: 15px;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 6px;
+    }
+
+    .proj-desc {
+      font-size: 12px;
+      color: var(--text-dim);
+      line-height: 1.5;
+      margin-bottom: 12px;
+      flex-grow: 1;
+    }
+
+    .proj-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-bottom: 12px;
+    }
+
+    .proj-stack-badge {
+      font-family: 'Fira Code', monospace;
+      font-size: 9px;
+      background: rgba(255, 255, 255, 0.05);
+      color: #cbd5e1;
+      padding: 2px 6px;
+      border-radius: 3px;
+    }
+
+    .proj-link {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--red);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    /* 3. Trajectory Timeline Inside Modal */
+    .timeline-container {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .timeline-card {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-left: 3px solid var(--red);
+      border-radius: 0 12px 12px 0;
+      padding: 16px 20px;
+    }
+
+    .timeline-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 4px;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .timeline-role {
+      font-size: 14px;
+      font-weight: 800;
+      color: #ffffff;
+    }
+
+    .timeline-period {
+      font-family: 'Fira Code', monospace;
+      font-size: 11px;
       color: var(--red);
     }
 
-    .footer-copy {
+    .timeline-company {
       font-size: 12px;
+      font-weight: 600;
+      color: var(--text-dim);
+      margin-bottom: 8px;
+    }
+
+    .timeline-points {
+      font-size: 12.5px;
+      color: #cbd5e1;
+      line-height: 1.6;
+      list-style-position: inside;
+    }
+
+    /* 4. CV & Downloads Inside Modal */
+    .cv-modal-box {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .cv-download-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .cv-card {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 24px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .cv-badge {
+      font-family: 'Fira Code', monospace;
+      font-size: 11px;
+      color: var(--green);
+      background: rgba(16, 185, 129, 0.1);
+      padding: 4px 10px;
+      border-radius: 4px;
+    }
+
+    .cv-name {
+      font-size: 16px;
+      font-weight: 800;
+      color: #ffffff;
+    }
+
+    .cv-btn-download {
+      background: var(--red);
+      color: #ffffff;
+      padding: 10px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s;
+    }
+
+    .cv-btn-download:hover {
+      background: #dc2626;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px -5px var(--red-glow);
+    }
+
+    /* 5. Contact Options Inside Modal */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .contact-card {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.25s;
+    }
+
+    .contact-card:hover {
+      background: rgba(255, 255, 255, 0.06);
+      border-color: var(--red);
+      transform: translateY(-2px);
+    }
+
+    .contact-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: rgba(239, 68, 68, 0.1);
+      color: var(--red);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .contact-icon svg {
+      width: 20px;
+      height: 20px;
+      fill: currentColor;
+    }
+
+    .contact-info-title {
+      font-size: 11px;
+      font-weight: 700;
       color: var(--text-muted);
-      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .contact-info-val {
+      font-size: 14px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-top: 2px;
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 860px) {
+      .app-viewport {
+        padding: 16px 20px;
+      }
+      .command-hub {
+        flex-direction: column;
+        align-items: center;
+      }
+      .hub-btn {
+        width: 100%;
+        max-width: 100%;
+      }
+      .modal-metrics-grid,
+      .modal-projects-grid,
+      .cv-download-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+      .status-badge {
+        display: none;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .video-background-wrap video {
+        display: none;
+      }
+      .hub-btn, .modal-backdrop, .modal-window {
+        transition: none !important;
+      }
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <a href="#" class="brand">RODRIGO<span class="accent-red">.</span>GOMES</a>
-    <nav class="nav-links">
-      <a href="#metricas">Métricas</a>
-      <a href="#projetos">Projetos em Produção</a>
-      <a href="https://abscore.app" target="_blank">ABS Core</a>
-      <a href="https://cortex.abscore.app" target="_blank">CORTEX</a>
-      <a href="https://oconnector.tech" target="_blank">Holding</a>
-    </nav>
-    <div class="social-icons">
-      <a href="https://www.linkedin.com/in/eusheriff/" target="_blank" title="LinkedIn" aria-label="LinkedIn">
-        <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-      </a>
-      <a href="https://github.com/eusheriff" target="_blank" title="GitHub" aria-label="GitHub">
-        <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-      </a>
-      <a href="https://instagram.com/eusheriff/" target="_blank" title="Instagram" aria-label="Instagram">
-        <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-      </a>
-    </div>
-  </header>
+  <!-- High-Performance Animated Video Background -->
+  <div class="video-background-wrap" aria-hidden="true">
+    <video id="bgVideo" autoplay loop muted playsinline poster="assets/hero_poster_v2.jpg">
+      <source src="assets/hero_video_v2.mp4" type="video/mp4">
+      <source src="https://res.cloudinary.com/dp1pfh9bq/video/upload/q_auto,f_auto/v1788028642/Man_sitting_at_desk_202608291536_tdppqb.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="video-background-overlay" aria-hidden="true"></div>
+  <div class="video-background-grid" aria-hidden="true"></div>
 
-  <!-- Hero Section Following Reference Hierarchy - Focused 100% on Rodrigo Gomes -->
-  <section class="hero-stage">
-    <div class="hero-header-block">
+  <!-- Main Viewport UI (Command Terminal Interface) -->
+  <div class="app-viewport">
+    
+    <!-- Top Navigation Header -->
+    <header>
+      <a href="#" class="brand">RODRIGO<span class="accent-red">.</span>GOMES</a>
+      <div class="status-badge"><span class="pulse-dot"></span>Disponível para Staff / Principal & Advisory</div>
+      <div class="nav-actions">
+        <a href="https://www.linkedin.com/in/eusheriff/" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+        </a>
+        <a href="https://github.com/eusheriff" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub" aria-label="GitHub">
+          <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+        <a href="https://wa.me/5522992363462?text=Ol%C3%A1%20Rodrigo,%20vi%20sua%20OpenPage%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener noreferrer" class="social-link" title="WhatsApp" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.983.536 1.936.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.586-5.766-5.768-5.766zm9.969 5.766c0 5.508-4.492 10-10 10-1.748 0-3.387-.45-4.821-1.238l-7.179 1.882 1.919-7.009c-.862-1.479-1.36-3.197-1.36-5.025 0-5.508 4.492-10 10-10 5.508 0 10 4.492 10 10z"/></svg>
+        </a>
+      </div>
+    </header>
+
+    <!-- Center Executive Command Stage -->
+    <main class="hero-center">
       <h1 class="hero-super-title">RODRIGO<span class="accent-char">.</span>GOMES</h1>
       <div class="hero-sub-title">PRINCIPAL.CLOUD.&.AI.ARCHITECT</div>
-    </div>
+      <p class="hero-tagline">
+        Arquiteto Principal com <b>14+ anos de engenharia em sistemas distribuídos de missão crítica</b> (ex-Apple 9Y, AWS, Stanford GSB EMBA). Fundador da <b>OConnector Tech</b>, criador do <b>ABS Core</b> (governança WASM 1.2ms) e do <b>CORTEX</b> (memória soberana MCP).
+      </p>
 
-    <!-- Center Stage 3-Column Figure Composition -->
-    <div class="figure-showcase">
-      <!-- Left Column: Personal Trajectory & Bio -->
-      <div class="stage-bio-left">
-        <div class="cyber-badge"><span class="pulse-dot"></span>Disponível para Staff / Principal & Advisory</div>
-        <p>
-          Arquiteto Principal de Cloud, Sistemas Distribuídos e Governança de Agentes de IA com mais de <b>14 anos construindo e operando infraestruturas de missão crítica globais</b> (Apple, AWS).
-        </p>
-        <p>
-          Fundador da <b>OConnector Technology I.S.</b>, criador do <b>ABS Core</b> (governança determinística em WASM 1.2ms) e do <b>CORTEX</b> (camada de memória soberana persistente via MCP).
-        </p>
-      </div>
+      <!-- Animated Hub Buttons (Open Floating Windows) -->
+      <div class="command-hub">
+        
+        <!-- Button 1: Métricas & Confiabilidade -->
+        <button class="hub-btn" onclick="openModal('modal-metrics')">
+          <div class="hub-icon">
+            <svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+          </div>
+          <div class="hub-text">
+            <div class="hub-title">Métricas de Produção</div>
+            <div class="hub-desc">350k+ Ações · 1.2ms WASM</div>
+          </div>
+        </button>
 
-      <!-- Center Column: Framed Stage Portrait -->
-      <div class="center-frame">
-        <div class="portrait-card">
-          <img src="assets/hero_bg.png" alt="Rodrigo Gomes (Isheriff) palestrando">
-          <div class="portrait-overlay-gradient"></div>
-        </div>
-      </div>
+        <!-- Button 2: Projetos & Live Proof -->
+        <button class="hub-btn" onclick="openModal('modal-projects')">
+          <div class="hub-icon">
+            <svg viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+          </div>
+          <div class="hub-text">
+            <div class="hub-title">Projetos em Produção</div>
+            <div class="hub-desc">10 Sistemas Vivos & Specs</div>
+          </div>
+        </button>
 
-      <!-- Right Column: Authority Stack with Dot Separators -->
-      <div class="credentials-stack-right">
-        <div>
-          <div class="cred-entry">EX<span class="dot-sep">.</span>APPLE<span class="dot-sep">.</span>(9Y)</div>
-          <div class="cred-role">Sustentação Global & Alta Criticidade</div>
-        </div>
-        <div>
-          <div class="cred-entry">EX<span class="dot-sep">.</span>AWS</div>
-          <div class="cred-role">Enterprise Cloud & Zero Trust</div>
-        </div>
-        <div>
-          <div class="cred-entry">GLG<span class="dot-sep">.</span>COUNCIL<span class="dot-sep">.</span>MEMBER</div>
-          <div class="cred-role">Cloud & AI Governance Advisory</div>
-        </div>
-        <div>
-          <div class="cred-entry">FOUNDER<span class="dot-sep">.</span>OCONNECTOR</div>
-          <div class="cred-role">Inova Simples CNPJ: 65.162.322/0001-82</div>
-        </div>
-        <div>
-          <div class="cred-entry">RUST<span class="dot-sep">.</span>WASM<span class="dot-sep">.</span>EDGE</div>
-          <div class="cred-role">Kernel Determinístico 1.2ms</div>
-        </div>
-      </div>
-    </div>
+        <!-- Button 3: Trajetória & Autoridade -->
+        <button class="hub-btn" onclick="openModal('modal-trajectory')">
+          <div class="hub-icon">
+            <svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+          </div>
+          <div class="hub-text">
+            <div class="hub-title">Trajetória & Autoridade</div>
+            <div class="hub-desc">Stanford · Apple · AWS · GLG</div>
+          </div>
+        </button>
 
-    <!-- Bottom Centered Slogan & Action -->
-    <div class="hero-slogan-bottom">
-      <div class="slogan-text">
-        CONSTRUINDO A INFRAESTRUTURA SOBERANA E A GOVERNANÇA DE RUNTIME PARA <span class="accent-red">AGENTES DE IA</span>
-      </div>
-      <div class="hero-action-buttons">
-        <a href="#projetos" class="btn-red-action">Ver Projetos em Produção</a>
-        <a href="https://cortex.abscore.app/docs" target="_blank" class="btn-outline-cyber">Documentação CORTEX</a>
-      </div>
-    </div>
-  </section>
+        <!-- Button 4: Contato / Advisory Direct -->
+        <button class="hub-btn" onclick="openModal('modal-contact')">
+          <div class="hub-icon">
+            <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+          </div>
+          <div class="hub-text">
+            <div class="hub-title">Contato & Advisory</div>
+            <div class="hub-desc">WhatsApp · E-mail Direto</div>
+          </div>
+        </button>
 
-  <!-- Real Production Metrics -->
-  <div class="metrics-bar" id="metricas">
-    <div class="metrics-grid">
-      <div class="metric-item">
-        <div class="metric-val">350.000+</div>
-        <div class="metric-label">Ações Agênticas Governadas (Banking)</div>
       </div>
-      <div class="metric-item">
-        <div class="metric-val">1.2<span>ms</span></div>
-        <div class="metric-label">Latência do Kernel (WASM P50)</div>
+    </main>
+
+    <!-- Minimalist Clean Footer -->
+    <footer>
+      <div class="footer-left">
+        <span>&copy; 2026 RODRIGO GOMES (ISHERIFF).</span>
+        <span>OConnector Technology Inova Simples (CNPJ: 65.162.322/0001-82).</span>
       </div>
-      <div class="metric-item">
-        <div class="metric-val">23<span>ms</span></div>
-        <div class="metric-label">Loop Completo de Governança</div>
+      <div class="footer-right">
+        <button id="videoToggleBtn" class="video-control-btn" aria-label="Alternar vídeo de fundo">
+          <svg id="videoPauseIcon" viewBox="0 0 24 24"><path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/></svg>
+          <svg id="videoPlayIcon" style="display:none;" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          <span id="videoToggleText">PAUSE BG</span>
+        </button>
       </div>
-      <div class="metric-item">
-        <div class="metric-val">0</div>
-        <div class="metric-label">Violações de Segurança Registradas</div>
+    </footer>
+
+  </div>
+
+  <!-- ==========================================================================
+       FLOATING WINDOW MODALS
+       ========================================================================== -->
+
+  <!-- 1. MODAL: MÉTRICAS & HARD DATA -->
+  <div id="modal-metrics" class="modal-backdrop" onclick="closeOnBackdrop(event, this)">
+    <div class="modal-window">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="modal-tag">Telemetry</span>
+          <div class="modal-title">Métricas Reais de Engenharia em Produção</div>
+        </div>
+        <button class="modal-close-btn" onclick="closeModal('modal-metrics')" aria-label="Fechar janela">
+          <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-metrics-grid">
+          <div class="m-card">
+            <div class="m-val">350.000+</div>
+            <div class="m-label">Ações Agênticas Governadas</div>
+            <div class="m-desc">Execuções de agentes de software auditadas em ambiente bancário com interdição e zero falhas.</div>
+          </div>
+          <div class="m-card">
+            <div class="m-val">1.2<span>ms</span></div>
+            <div class="m-label">Latência do Kernel (P50)</div>
+            <div class="m-desc">Execução determinística em WebAssembly (WASM) e Rust/C para validação de políticas em tempo real.</div>
+          </div>
+          <div class="m-card">
+            <div class="m-val">23<span>ms</span></div>
+            <div class="m-label">Loop Completo de Governança</div>
+            <div class="m-desc">Tempo total de trânsito em 11 gates criptográficos (Ed25519 e carimbo de tempo RFC 3161).</div>
+          </div>
+          <div class="m-card">
+            <div class="m-val">99.99<span>%</span></div>
+            <div class="m-label">Disponibilidade (Four Nines)</div>
+            <div class="m-desc">SLA alcançado em microsserviços distribuídos atendendo mais de 250.000 usuários ativos.</div>
+          </div>
+          <div class="m-card">
+            <div class="m-val">-35<span>%</span></div>
+            <div class="m-label">Redução de Custos (FinOps)</div>
+            <div class="m-desc">Economia em nuvem AWS corporativa com instâncias Graviton, Savings Plans e dimensionamento dinâmico.</div>
+          </div>
+          <div class="m-card">
+            <div class="m-val">0</div>
+            <div class="m-label">Violações de Segurança</div>
+            <div class="m-desc">Arquitetura Zero Trust estrita em conformidade com NIST AI RMF, LGPD Art. 18 e SOC 2.</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="selector-section" id="projetos">
-    <div class="selector-tag">Proof of Work · Live Systems</div>
-    <div class="selector-title">Ecossistema de Projetos Entregues</div>
-    <p class="selector-subtitle">Sistemas ativos, documentados e operando em produção com código e infraestrutura verificáveis.</p>
-    <div class="toggle-pill">
-      <button class="toggle-btn active" onclick="filterProjects('all')">Todos os Projetos</button>
-      <button class="toggle-btn" onclick="filterProjects('ai')">Motores de IA & Memória</button>
-      <button class="toggle-btn" onclick="filterProjects('gov')">Segurança & Governança</button>
-      <button class="toggle-btn" onclick="filterProjects('saas')">SaaS & Aplicações</button>
+  <!-- 2. MODAL: PROJETOS EM PRODUÇÃO -->
+  <div id="modal-projects" class="modal-backdrop" onclick="closeOnBackdrop(event, this)">
+    <div class="modal-window">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="modal-tag">Proof of Work</span>
+          <div class="modal-title">Ecossistema de Projetos Entregues</div>
+        </div>
+        <button class="modal-close-btn" onclick="closeModal('modal-projects')" aria-label="Fechar janela">
+          <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-filter-pills">
+          <button class="filter-btn active" onclick="filterModalProjects('all')">Todos</button>
+          <button class="filter-btn" onclick="filterModalProjects('ai')">Motores de IA & Memória</button>
+          <button class="filter-btn" onclick="filterModalProjects('gov')">Segurança & Governança</button>
+          <button class="filter-btn" onclick="filterModalProjects('saas')">SaaS & Aplicações</button>
+        </div>
+        <div class="modal-projects-grid">
+          
+          <!-- Card 1: CORTEX -->
+          <a href="https://cortex.abscore.app" target="_blank" rel="noopener noreferrer" class="proj-item" data-category="ai">
+            <div class="proj-top">
+              <span class="proj-tag">Cognitive Engine & MCP</span>
+              <span class="proj-status">Live Production</span>
+            </div>
+            <div class="proj-title">CORTEX Living Brain</div>
+            <div class="proj-desc">Motor de memória soberana persistente que elimina a amnésia e unifica Claude Desktop, Codex, Cursor e Gemini em tempo real.</div>
+            <div class="proj-stack">
+              <span class="proj-stack-badge">Cloudflare Workers</span>
+              <span class="proj-stack-badge">D1 Edge DB</span>
+              <span class="proj-stack-badge">Vectorize</span>
+              <span class="proj-stack-badge">MCP Protocol</span>
+            </div>
+            <div class="proj-link">Acessar cortex.abscore.app →</div>
+          </a>
+
+          <!-- Card 2: ABS Core -->
+          <a href="https://abscore.app" target="_blank" rel="noopener noreferrer" class="proj-item" data-category="gov">
+            <div class="proj-top">
+              <span class="proj-tag">Runtime Governance Engine</span>
+              <span class="proj-status">Enterprise Core</span>
+            </div>
+            <div class="proj-title">ABS Core Enterprise & SDK</div>
+            <div class="proj-desc">Plataforma industrial de interdição estrutural determinística (SIL) para agentes de IA com pipeline de 11 Gates e SDK Python.</div>
+            <div class="proj-stack">
+              <span class="proj-stack-badge">Rust / WASM (1.2ms)</span>
+              <span class="proj-stack-badge">Python SDK</span>
+              <span class="proj-stack-badge">Homebrew Tap</span>
+              <span class="proj-stack-badge">SHA-256 Ledger</span>
+            </div>
+            <div class="proj-link">Acessar abscore.app →</div>
+          </a>
+
+          <!-- Card 3: O-Bot OS -->
+          <a href="https://o-bot.app" target="_blank" rel="noopener noreferrer" class="proj-item" data-category="ai">
+            <div class="proj-top">
+              <span class="proj-tag">Autonomous Operating System</span>
+              <span class="proj-status">Banking Tested</span>
+            </div>
+            <div class="proj-title">O-Bot OS</div>
+            <div class="proj-desc">Sistema operacional de agentes autônomos com mais de 350.000 ações processadas em ambiente bancário regulado.</div>
+            <div class="proj-stack">
+              <span class="proj-stack-badge">Autonomous Agents</span>
+              <span class="proj-stack-badge">Zero Trust</span>
+              <span class="proj-stack-badge">Prometheus/Grafana</span>
+            </div>
+            <div class="proj-link">Acessar o-bot.app →</div>
+          </a>
+
+          <!-- Card 4: ASS Shield -->
+          <a href="https://ass.abscore.app" target="_blank" rel="noopener noreferrer" class="proj-item" data-category="gov">
+            <div class="proj-top">
+              <span class="proj-tag">Security & Exposure Scan</span>
+              <span class="proj-status">Free Tool</span>
+            </div>
+            <div class="proj-title">ASS — Sovereign Shield</div>
+            <div class="proj-desc">Auditor de superfície agêntica e diagnóstico de APIs contra ataques de injeção, cruzando MITRE ATLAS e OWASP Top 10 com SARIF 2.1.0.</div>
+            <div class="proj-stack">
+              <span class="proj-stack-badge">SARIF 2.1.0 Export</span>
+              <span class="proj-stack-badge">MITRE ATLAS</span>
+              <span class="proj-stack-badge">OWASP Top 10</span>
+            </div>
+            <div class="proj-link">Rodar Scan em ass.abscore.app →</div>
+          </a>
+
+          <!-- Card 5: OConnector Tech -->
+          <a href="https://oconnector.tech" target="_blank" rel="noopener noreferrer" class="proj-item" data-category="gov">
+            <div class="proj-top">
+              <span class="proj-tag">Institutional DeepTech</span>
+              <span class="proj-status">Holding Live</span>
+            </div>
+            <div class="proj-title">OConnector Tech I.S.</div>
+            <div class="proj-desc">Holding institucional de Defesa Cibernética de IA Soberana (CNPJ: 65.162.322/0001-82), enquadrada no regime PBIA Brasil e NIST AI RMF.</div>
+            <div class="proj-stack">
+              <span class="proj-stack-badge">Inova Simples</span>
+              <span class="proj-stack-badge">NRaaS</span>
+              <span class="proj-stack-badge">NIST Compliance</span>
+            </div>
+            <div class="proj-link">Acessar oconnector.tech →</div>
+          </a>
+
+          <!-- Card 6: Construdata21 -->
+          <div class="proj-item" data-category="saas">
+            <div class="proj-top">
+              <span class="proj-tag">Enterprise SaaS (250k+ Users)</span>
+              <span class="proj-status">99.99% Four Nines</span>
+            </div>
+            <div class="proj-title">Construdata21 (3MDR Group)</div>
+            <div class="proj-desc">Arquitetura de plataforma SaaS distribuída para inteligência de dados de mercado com 250k+ usuários ativos e caching multinível.</div>
+            <div class="proj-stack">
+              <span class="proj-stack-badge">Distributed SaaS</span>
+              <span class="proj-stack-badge">Multi-level Caching</span>
+              <span class="proj-stack-badge">CI/CD Pipelines</span>
+            </div>
+            <div class="proj-link">Case Comprovado em Produção</div>
+          </div>
+
+          <!-- Card 7: Peladeiros FC -->
+          <a href="https://peladeirosfutebolclube.com.br" target="_blank" rel="noopener noreferrer" class="proj-item" data-category="saas">
+            <div class="proj-top">
+              <span class="proj-tag">Distributed SaaS</span>
+              <span class="proj-status">SaaS Live</span>
+            </div>
+            <div class="proj-title">Peladeiros FC</div>
+            <div class="proj-desc">SaaS esportivo com consistência de eventos, súmula imutável como source-of-truth e arquitetura edge-first.</div>
+            <div class="proj-stack">
+              <span class="proj-stack-badge">Edge Compute</span>
+              <span class="proj-stack-badge">Event Sourcing</span>
+            </div>
+            <div class="proj-link">Acessar peladeirosfutebolclube.com.br →</div>
+          </a>
+
+          <!-- Card 8: Docs CORTEX -->
+          <a href="https://cortex.abscore.app/docs" target="_blank" rel="noopener noreferrer" class="proj-item" data-category="ai">
+            <div class="proj-top">
+              <span class="proj-tag">Developer Portal</span>
+              <span class="proj-status">Documentation</span>
+            </div>
+            <div class="proj-title">Documentação Técnica CORTEX</div>
+            <div class="proj-desc">Portal técnico com guias de arquitetura, integração MCP em 1 clique para Claude Desktop, Codex, Cursor e terminal.</div>
+            <div class="proj-stack">
+              <span class="proj-stack-badge">Quickstart Shell</span>
+              <span class="proj-stack-badge">MCP Specs</span>
+            </div>
+            <div class="proj-link">Acessar cortex.abscore.app/docs →</div>
+          </a>
+
+        </div>
+      </div>
     </div>
   </div>
 
-  <section class="projects-grid">
-    <!-- Card 1: CORTEX Engine -->
-    <a href="https://cortex.abscore.app" target="_blank" class="project-card" data-category="ai">
-      <div class="card-top">
-        <div class="card-icon">
-          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 3v18"></path><path d="M3 12h18"></path></svg>
+  <!-- 3. MODAL: TRAJETÓRIA & AUTORIDADE -->
+  <div id="modal-trajectory" class="modal-backdrop" onclick="closeOnBackdrop(event, this)">
+    <div class="modal-window">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="modal-tag">Executive Track Record</span>
+          <div class="modal-title">Trajetória, Liderança & Credenciais</div>
         </div>
-        <span class="card-status">Live Production</span>
+        <button class="modal-close-btn" onclick="closeModal('modal-trajectory')" aria-label="Fechar janela">
+          <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
       </div>
-      <div class="card-tag">Cognitive Engine & MCP</div>
-      <div class="card-title">CORTEX Living Brain</div>
-      <div class="card-desc">Motor de memória soberana persistente que elimina a amnésia e unifica Claude Desktop, OpenAI Codex, Cursor e Gemini em tempo real.</div>
-      <div class="card-stack">
-        <span class="stack-badge">Cloudflare Workers</span>
-        <span class="stack-badge">D1 Edge DB</span>
-        <span class="stack-badge">Vectorize</span>
-        <span class="stack-badge">MCP Protocol</span>
-      </div>
-      <div class="card-link-text">Acessar cortex.abscore.app →</div>
-    </a>
+      <div class="modal-body">
+        <div class="timeline-container">
+          
+          <!-- Stanford & Formação Executiva -->
+          <div class="timeline-card" style="border-left-color: #d4af37;">
+            <div class="timeline-header">
+              <span class="timeline-role">MBA Executivo</span>
+              <span class="timeline-period" style="color: #d4af37;">Conclusão: 2016</span>
+            </div>
+            <div class="timeline-company">Stanford Graduate School of Business (GSB)</div>
+            <ul class="timeline-points">
+              <li>Liderança executiva estratégica, governança corporativa e tradução de complexidade técnica em valor de negócios e mitigação de riscos para C-levels.</li>
+            </ul>
+          </div>
 
-    <!-- Card 2: ABS Core -->
-    <a href="https://abscore.app" target="_blank" class="project-card" data-category="gov">
-      <div class="card-top">
-        <div class="card-icon">
-          <svg viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+          <!-- OConnector -->
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <span class="timeline-role">Founder & Principal Cloud/AI Architect</span>
+              <span class="timeline-period">Jun/2025 – Atual</span>
+            </div>
+            <div class="timeline-company">OConnector Technology Inova Simples (CNPJ: 65.162.322/0001-82)</div>
+            <ul class="timeline-points">
+              <li>Criação do ABS Core (Structural Interdiction Layer em Rust/WASM com latência de 1.2ms P50).</li>
+              <li>Arquitetura do CORTEX (memória persistente soberana para agentes via protocolo MCP).</li>
+              <li>Governança e conformidade com LGPD Art. 18, NIST AI RMF e editais FINEP/BNDES.</li>
+            </ul>
+          </div>
+
+          <!-- GLG -->
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <span class="timeline-role">Membro do Conselho (Cloud & AI Expert Advisor)</span>
+              <span class="timeline-period">Jan/2025 – Atual</span>
+            </div>
+            <div class="timeline-company">Gerson Lehrman Group (GLG Council)</div>
+            <ul class="timeline-points">
+              <li>Assessoria estratégica sob demanda para fundos de investimento, consultorias globais e C-levels em decisões de arquitetura de nuvem híbrida, segurança cibernética e governança de IA.</li>
+            </ul>
+          </div>
+
+          <!-- 3MDR Group Construdata21 -->
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <span class="timeline-role">Engenheiro Fullstack Principal & Arquiteto</span>
+              <span class="timeline-period">Nov/2022 – Mai/2025</span>
+            </div>
+            <div class="timeline-company">3MDR Group – Construdata21</div>
+            <ul class="timeline-points">
+              <li>Arquitetura distribuída de ponta a ponta atendendo 250.000+ usuários ativos.</li>
+              <li>Elevação da disponibilidade global de 99,9% para 99,99% (Four Nines) e caching multinível.</li>
+            </ul>
+          </div>
+
+          <!-- AWS -->
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <span class="timeline-role">Engenheiro de Infraestrutura Cloud Sênior</span>
+              <span class="timeline-period">Mar/2019 – Set/2022</span>
+            </div>
+            <div class="timeline-company">Amazon Web Services (AWS)</div>
+            <ul class="timeline-points">
+              <li>Modernização e topologias híbridas de altíssima complexidade para clientes enterprise no Brasil e LatAm.</li>
+              <li>Well-Architected Reviews, Landing Zones automatizadas (AWS Control Tower/Organizations) e FinOps corporativo com até 35% de redução de custos.</li>
+              <li>Certificação: AWS Certified Solutions Architect – Professional (AWS SAP).</li>
+            </ul>
+          </div>
+
+          <!-- Apple -->
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <span class="timeline-role">Líder Técnico de Infraestrutura e Sistemas (9 Anos)</span>
+              <span class="timeline-period">Out/2010 – Jan/2019</span>
+            </div>
+            <div class="timeline-company">Apple Inc.</div>
+            <ul class="timeline-points">
+              <li>Sustentação e evolução contínua de infraestrutura global de missão crítica com dezenas de milhares de servidores físicos e virtuais sob rigorosos SLAs operacionais e auditorias de segurança.</li>
+            </ul>
+          </div>
+
         </div>
-        <span class="card-status">Enterprise Core</span>
       </div>
-      <div class="card-tag">Runtime Governance Engine</div>
-      <div class="card-title">ABS Core Enterprise & SDK</div>
-      <div class="card-desc">Plataforma industrial de interdição estrutural determinística (SIL) para agentes de IA com governança de 11 Gates, SDK Python e Homebrew Tap.</div>
-      <div class="card-stack">
-        <span class="stack-badge">Rust / WASM (1.2ms)</span>
-        <span class="stack-badge">Python SDK</span>
-        <span class="stack-badge">Homebrew Tap</span>
-        <span class="stack-badge">SHA-256 Ledger</span>
-      </div>
-      <div class="card-link-text">Acessar abscore.app →</div>
-    </a>
-
-    <!-- Card 3: O-Bot OS -->
-    <a href="https://o-bot.app" target="_blank" class="project-card" data-category="ai">
-      <div class="card-top">
-        <div class="card-icon">
-          <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
-        </div>
-        <span class="card-status">Banking Tested</span>
-      </div>
-      <div class="card-tag">Autonomous Operating System</div>
-      <div class="card-title">O-Bot OS</div>
-      <div class="card-desc">Sistema operacional de agentes verticais com 350.000+ ações processadas em ambiente bancário para Due Diligence e conformidade.</div>
-      <div class="card-stack">
-        <span class="stack-badge">Autonomous Agents</span>
-        <span class="stack-badge">Zero Trust</span>
-        <span class="stack-badge">Prometheus/Grafana</span>
-      </div>
-      <div class="card-link-text">Acessar o-bot.app →</div>
-    </a>
-
-    <!-- Card 4: ASS - Agentic Sovereign Shield -->
-    <a href="https://ass.abscore.app" target="_blank" class="project-card" data-category="gov">
-      <div class="card-top">
-        <div class="card-icon">
-          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-        </div>
-        <span class="card-status">Free Tool</span>
-      </div>
-      <div class="card-tag">Security & Exposure Scan</div>
-      <div class="card-title">ASS — Sovereign Shield</div>
-      <div class="card-desc">Auditor de superfície agêntica e diagnóstico de exposição de APIs contra ataques de injeção, cruzando MITRE ATLAS e OWASP Top 10 com SARIF 2.1.0.</div>
-      <div class="card-stack">
-        <span class="stack-badge">SARIF 2.1.0 Export</span>
-        <span class="stack-badge">MITRE ATLAS</span>
-        <span class="stack-badge">OWASP Top 10</span>
-      </div>
-      <div class="card-link-text">Rodar Scan em ass.abscore.app →</div>
-    </a>
-
-    <!-- Card 5: OConnector Technology Holding -->
-    <a href="https://oconnector.tech" target="_blank" class="project-card" data-category="gov">
-      <div class="card-top">
-        <div class="card-icon">
-          <svg viewBox="0 0 24 24"><path d="M16.5 9.4 7.55 4.24a1.78 1.78 0 0 0-2.5 1.55v12.42a1.78 1.78 0 0 0 2.5 1.55L16.5 14.6a1.78 1.78 0 0 0 0-3.2z"></path></svg>
-        </div>
-        <span class="card-status">Holding Live</span>
-      </div>
-      <div class="card-tag">Institutional DeepTech</div>
-      <div class="card-title">OConnector Tech I.S.</div>
-      <div class="card-desc">Holding institucional de Defesa Cibernética de IA Soberana (CNPJ: 65.162.322/0001-82), enquadrada no regime PBIA Brasil e NIST AI RMF.</div>
-      <div class="card-stack">
-        <span class="stack-badge">Inova Simples</span>
-        <span class="stack-badge">NRaaS</span>
-        <span class="stack-badge">PBIA 2024-2028</span>
-        <span class="stack-badge">NIST Compliance</span>
-      </div>
-      <div class="card-link-text">Acessar oconnector.tech →</div>
-    </a>
-
-    <!-- Card 6: Peladeiros FC -->
-    <a href="https://peladeirosfutebolclube.com.br" target="_blank" class="project-card" data-category="saas">
-      <div class="card-top">
-        <div class="card-icon">
-          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polygon points="12 2 15 8.5 22 9.5 17 14.5 18.5 21.5 12 18 5.5 21.5 7 14.5 2 9.5 9 8.5 12 2"></polygon></svg>
-        </div>
-        <span class="card-status">SaaS Live</span>
-      </div>
-      <div class="card-tag">Distributed SaaS Architecture</div>
-      <div class="card-title">Peladeiros FC</div>
-      <div class="card-desc">SaaS de organização esportiva e consistência de eventos com súmula imutável como source-of-truth e arquitetura edge-first.</div>
-      <div class="card-stack">
-        <span class="stack-badge">Edge Compute</span>
-        <span class="stack-badge">Event Sourcing</span>
-        <span class="stack-badge">Gamification Engine</span>
-      </div>
-      <div class="card-link-text">Acessar peladeirosfutebolclube.com.br →</div>
-    </a>
-
-    <!-- Card 7: Documentação Técnica CORTEX -->
-    <a href="https://cortex.abscore.app/docs" target="_blank" class="project-card" data-category="ai">
-      <div class="card-top">
-        <div class="card-icon">
-          <svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
-        </div>
-        <span class="card-status">Docs & Quickstart</span>
-      </div>
-      <div class="card-tag">Developer Portal</div>
-      <div class="card-title">Documentação CORTEX</div>
-      <div class="card-desc">Portal técnico completo com guias práticos, integração MCP para Claude Desktop, Codex, Cursor e terminal em 1 clique.</div>
-      <div class="card-stack">
-        <span class="stack-badge">Quickstart Shell</span>
-        <span class="stack-badge">API Spec</span>
-        <span class="stack-badge">Architecture Guides</span>
-      </div>
-      <div class="card-link-text">Acessar cortex.abscore.app/docs →</div>
-    </a>
-
-    <!-- Card 8: OpenAPI Spec & GPT Actions -->
-    <a href="https://cortex.abscore.app/openapi.json" target="_blank" class="project-card" data-category="ai">
-      <div class="card-top">
-        <div class="card-icon">
-          <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-        </div>
-        <span class="card-status">API Standard</span>
-      </div>
-      <div class="card-tag">OpenAPI 3.1.0 Protocol</div>
-      <div class="card-title">Universal OpenAPI Spec</div>
-      <div class="card-desc">Endpoints públicos REST para importação direta de memória persistente e recuperação semântica no ChatGPT Custom GPTs.</div>
-      <div class="card-stack">
-        <span class="stack-badge">OpenAPI 3.1</span>
-        <span class="stack-badge">ChatGPT Actions</span>
-        <span class="stack-badge">Bearer Auth</span>
-      </div>
-      <div class="card-link-text">Acessar cortex.abscore.app/openapi.json →</div>
-    </a>
-
-    <!-- Card 9: SalvaIguaba Platform -->
-    <a href="https://salvaiguaba.pages.dev" target="_blank" class="project-card" data-category="saas">
-      <div class="card-top">
-        <div class="card-icon">
-          <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 15h-2v-2h2zm0-4h-2V7h2z"></path></svg>
-        </div>
-        <span class="card-status">SaaS Live</span>
-      </div>
-      <div class="card-tag">Circular Economy SaaS</div>
-      <div class="card-title">SalvaIguaba Platform</div>
-      <div class="card-desc">Plataforma de combate ao desperdício de alimentos no comércio local, com logística reversa, ofertas em tempo real e impacto social.</div>
-      <div class="card-stack">
-        <span class="stack-badge">TypeScript</span>
-        <span class="stack-badge">Cloudflare Pages</span>
-        <span class="stack-badge">Mobile-First</span>
-      </div>
-      <div class="card-link-text">Acessar salvaiguaba.pages.dev →</div>
-    </a>
-  </section>
-
-  <footer>
-    <div class="footer-brand">RODRIGO GOMES</div>
-    <div class="footer-links">
-      <a href="https://cortex.abscore.app" target="_blank">CORTEX Engine</a>
-      <a href="https://abscore.app" target="_blank">ABS Core</a>
-      <a href="https://o-bot.app" target="_blank">O-Bot OS</a>
-      <a href="https://ass.abscore.app" target="_blank">ASS Shield</a>
-      <a href="https://oconnector.tech" target="_blank">OConnector Tech I.S.</a>
-      <a href="https://peladeirosfutebolclube.com.br" target="_blank">Peladeiros FC</a>
-      <a href="https://cortex.abscore.app/docs" target="_blank">Documentação CORTEX</a>
-      <a href="mailto:contato@oconnector.tech">Contato</a>
     </div>
-    <div class="footer-copy">
-      &copy; 2026 RODRIGO GOMES (ISHERIFF). Todos os direitos reservados. OConnector Technology Inova Simples (CNPJ: 65.162.322/0001-82).
-    </div>
-  </footer>
+  </div>
 
+  <!-- 4. MODAL: CONTATO & ADVISORY -->
+  <div id="modal-contact" class="modal-backdrop" onclick="closeOnBackdrop(event, this)">
+    <div class="modal-window">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="modal-tag">Direct Channel</span>
+          <div class="modal-title">Contato Executivo & Advisory</div>
+        </div>
+        <button class="modal-close-btn" onclick="closeModal('modal-contact')" aria-label="Fechar janela">
+          <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="contact-grid">
+          
+          <!-- WhatsApp Direct -->
+          <a href="https://wa.me/5522992363462?text=Ol%C3%A1%20Rodrigo,%20vi%20sua%20OpenPage%20e%20gostaria%20de%20conversar%20sobre%20oportunidades/advisory." target="_blank" rel="noopener noreferrer" class="contact-card">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.983.536 1.936.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.586-5.766-5.768-5.766zm9.969 5.766c0 5.508-4.492 10-10 10-1.748 0-3.387-.45-4.821-1.238l-7.179 1.882 1.919-7.009c-.862-1.479-1.36-3.197-1.36-5.025 0-5.508 4.492-10 10-10 5.508 0 10 4.492 10 10z"/></svg>
+            </div>
+            <div>
+              <div class="contact-info-title">WhatsApp Executivo</div>
+              <div class="contact-info-val">+55 (22) 99236-3462</div>
+            </div>
+          </a>
+
+          <!-- Institutional Email -->
+          <a href="mailto:contato@oconnector.tech" class="contact-card">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </div>
+            <div>
+              <div class="contact-info-title">E-mail Institucional</div>
+              <div class="contact-info-val">contato@oconnector.tech</div>
+            </div>
+          </a>
+
+          <!-- LinkedIn Profile -->
+          <a href="https://www.linkedin.com/in/eusheriff/" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </div>
+            <div>
+              <div class="contact-info-title">LinkedIn Oficial</div>
+              <div class="contact-info-val">linkedin.com/in/eusheriff</div>
+            </div>
+          </a>
+
+          <!-- Location & Availability -->
+          <div class="contact-card" style="cursor: default;">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            </div>
+            <div>
+              <div class="contact-info-title">Base Operacional</div>
+              <div class="contact-info-val">Brasília, DF · Global Remoto</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts: Modal Control, Filtering, Video Playback -->
   <script>
-    function filterProjects(category) {
-      const buttons = document.querySelectorAll('.toggle-btn');
+    // Modal Controller
+    function openModal(modalId) {
+      const modal = document.getElementById(modalId);
+      if (modal) {
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+    }
+
+    function closeModal(modalId) {
+      const modal = document.getElementById(modalId);
+      if (modal) {
+        modal.classList.remove('active');
+        document.body.style.overflow = 'auto';
+      }
+    }
+
+    function closeOnBackdrop(event, backdropElement) {
+      if (event.target === backdropElement) {
+        backdropElement.classList.remove('active');
+        document.body.style.overflow = 'auto';
+      }
+    }
+
+    // Keyboard 'Escape' to close any open modal
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        const activeModal = document.querySelector('.modal-backdrop.active');
+        if (activeModal) {
+          activeModal.classList.remove('active');
+          document.body.style.overflow = 'auto';
+        }
+      }
+    });
+
+    // Project Filtering inside Modal
+    function filterModalProjects(category) {
+      const buttons = document.querySelectorAll('.filter-btn');
       buttons.forEach(btn => btn.classList.remove('active'));
       event.target.classList.add('active');
 
-      const cards = document.querySelectorAll('.project-card');
-      cards.forEach(card => {
-        if (category === 'all' || card.getAttribute('data-category') === category) {
-          card.style.display = 'flex';
+      const items = document.querySelectorAll('.proj-item');
+      items.forEach(item => {
+        if (category === 'all' || item.getAttribute('data-category') === category) {
+          item.style.display = 'flex';
         } else {
-          card.style.display = 'none';
+          item.style.display = 'none';
+        }
+      });
+    }
+
+    // Background Video Playback Controller
+    const bgVideo = document.getElementById('bgVideo');
+    const videoToggleBtn = document.getElementById('videoToggleBtn');
+    const videoPauseIcon = document.getElementById('videoPauseIcon');
+    const videoPlayIcon = document.getElementById('videoPlayIcon');
+    const videoToggleText = document.getElementById('videoToggleText');
+
+    if (bgVideo) {
+      bgVideo.muted = true;
+      const playPromise = bgVideo.play();
+      if (playPromise !== undefined) {
+        playPromise.catch(err => {
+          console.log("Autoplay waiting for user gesture:", err);
+        });
+      }
+    }
+
+    if (videoToggleBtn && bgVideo) {
+      videoToggleBtn.addEventListener('click', () => {
+        if (bgVideo.paused) {
+          bgVideo.play();
+          videoPauseIcon.style.display = 'block';
+          videoPlayIcon.style.display = 'none';
+          videoToggleText.textContent = 'PAUSE BG';
+        } else {
+          bgVideo.pause();
+          videoPauseIcon.style.display = 'none';
+          videoPlayIcon.style.display = 'block';
+          videoToggleText.textContent = 'PLAY BG';
         }
       });
     }
