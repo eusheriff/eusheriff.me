@@ -28,3 +28,5 @@ Allow: /
 
 # LLM Manifest
 # https://eusheriff.me/llms.txt
+
+Sitemap: https://eusheriff.me/sitemap.xml
