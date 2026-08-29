@@ -1,0 +1,41 @@
+# Rodrigo Gomes (Isheriff) — Principal Cloud & AI Architect
+
+> Executive Portfolio & Systems in Production: Distributed Systems, Sovereign AI Agent Governance (WASM 1.2ms), and CORTEX Memory Architecture.
+
+## Executive Profile
+- **Name:** Rodrigo Gomes (Isheriff)
+- **Role:** Principal Cloud & AI Architect | Founder at OConnector Technology
+- **Experience:** 14+ years in critical mission distributed systems and sovereign AI governance.
+- **Track Record:** 
+  - Ex-Apple (9 Years): Large-scale infrastructure leadership and global reliability.
+  - AWS (Solutions Architect Professional - SAP): Enterprise hybrid cloud and FinOps.
+  - Stanford Graduate School of Business (GSB): Executive education.
+  - Gerson Lehrman Group (GLG Council Member): AI & Cloud expert advisor.
+
+## Core Production Ecosystem & Projects
+1. **CORTEX Living Brain** (https://cortex.abscore.app)
+   - Sovereign persistent memory engine unifying AI IDEs (Claude Desktop, Cursor, Gemini, Codex) via MCP protocol with zero amnesia.
+   - Stack: Cloudflare Workers, D1 Edge DB, Vectorize, Model Context Protocol (MCP).
+
+2. **ABS Core Enterprise & SDK** (https://abscore.app)
+   - Runtime governance and deterministic structural interdiction (SIL) engine for AI agents with 11 Gates.
+   - Stack: Rust / WASM (1.2ms execution), Python SDK, SHA-256 Ledger, SI-001 Invariant.
+
+3. **O-Bot OS** (https://o-bot.app)
+   - Autonomous agent operating system with 350k+ actions in regulated banking environments.
+
+4. **ASS — Sovereign Shield** (https://ass.abscore.app)
+   - Free security, exposure, and red-team audit scanner for agentic surfaces (OWASP & MITRE ATLAS).
+
+5. **OConnector Tech I.S.** (https://oconnector.tech)
+   - DeepTech holding company for Sovereign AI Cyber Defense (CNPJ: 65.162.322/0001-82).
+
+6. **Construdata21 (3MDR Group)**
+   - High-throughput SaaS serving 250,000+ active users with 99.99% availability.
+
+## Contact & Direct Channels
+- **Website:** https://eusheriff.me
+- **LinkedIn:** https://www.linkedin.com/in/eusheriff/
+- **GitHub:** https://github.com/eusheriff
+- **Email:** contato@oconnector.tech
+- **WhatsApp Direct:** +55 (22) 99236-3462
