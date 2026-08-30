@@ -33,6 +33,9 @@
 6. **Construdata21 (3MDR Group)**
    - High-throughput SaaS serving 250,000+ active users with 99.99% availability.
 
+7. **OCOLabs — AWS Incident Response Labs** (https://ocolabs.com.br)
+   - Browser-native AWS incident response and SRE simulation platform with Terraform, automated test validation, and GitHub evidence portfolio.
+
 ## Contact & Direct Channels
 - **Website:** https://eusheriff.me
 - **LinkedIn:** https://www.linkedin.com/in/eusheriff/
