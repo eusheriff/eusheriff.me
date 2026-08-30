@@ -27,7 +27,7 @@
 4. **ASS — Sovereign Shield** (https://ass.abscore.app)
    - Free security, exposure, and red-team audit scanner for agentic surfaces (OWASP & MITRE ATLAS).
 
-5. **OConnector Tech I.S.** (https://oconnector.tech)
+5. **OConnector Technology I.S.** (https://oconnector.tech)
    - DeepTech holding company for Sovereign AI Cyber Defense (CNPJ: 65.162.322/0001-82).
 
 6. **Construdata21 (3MDR Group)**
