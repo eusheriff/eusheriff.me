@@ -30,10 +30,14 @@
 5. **OConnector Technology I.S.** (https://oconnector.tech)
    - DeepTech holding company for Sovereign AI Cyber Defense (CNPJ: 65.162.322/0001-82).
 
-6. **Construdata21 (3MDR Group)**
+6. **Condonnector** (https://condonnector.com.br)
+   - Condominium SaaS and GovTech platform for Zero-Trust access control, package management, assemblies, resident communication, and LGPD-auditable operations.
+   - Stack: Cloudflare Edge, Access Core, Pack Core, REST/OpenAPI, SHA-256 audit chain.
+
+7. **Construdata21 (3MDR Group)**
    - High-throughput SaaS serving 250,000+ active users with 99.99% availability.
 
-7. **OCOLabs — AWS Incident Response Labs** (https://ocolabs.com.br)
+8. **OCOLabs — AWS Incident Response Labs** (https://ocolabs.com.br)
    - Browser-native AWS incident response and SRE simulation platform with Terraform, automated test validation, and GitHub evidence portfolio.
 
 ## Contact & Direct Channels
