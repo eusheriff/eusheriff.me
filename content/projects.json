@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "1.0",
+  "projects": [
+    { "id": "cortex", "name": "CORTEX Living Brain", "url": "https://cortex.abscore.app" },
+    { "id": "abs", "name": "ABS Core Enterprise & SDK", "url": "https://abscore.app" },
+    { "id": "obot", "name": "O-Bot OS", "url": "https://o-bot.app" },
+    { "id": "ass", "name": "ASS — Sovereign Shield", "url": "https://ass.abscore.app" },
+    { "id": "oconnector", "name": "OConnector Technology I.S.", "url": "https://oconnector.tech" },
+    { "id": "condonnector", "name": "Condonnector", "url": "https://condonnector.com.br" },
+    { "id": "construdata", "name": "Construdata21 (3MDR Group)", "url": "https://www.construdata21.com/pt/" },
+    { "id": "peladeiros", "name": "Peladeiros FC", "url": "https://peladeirosfutebolclube.com.br" },
+    { "id": "ocolabs", "name": "OCOLabs", "url": "https://ocolabs.com.br" }
+  ]
+}
