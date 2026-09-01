@@ -1,0 +1,40 @@
+name: quality
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  id-token: write
+  attestations: write
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npm run check
+      - name: Generate SBOM
+        uses: anchore/sbom-action@v0
+        with:
+          artifact-name: sbom.spdx.json
+          format: spdx-json
+      - name: Generate build digest
+        run: sha256sum index.html _headers llms.txt sitemap.xml > release.sha256
+      - uses: actions/upload-artifact@v4
+        with:
+          name: release-metadata
+          path: |
+            sbom.spdx.json
+            release.sha256
+      - name: Attest release source
+        uses: actions/attest-build-provenance@v2
+        with:
+          subject-path: index.html
