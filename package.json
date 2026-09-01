@@ -1,0 +1,14 @@
+{
+  "name": "eusheriff-openpage",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Executive portfolio for Rodrigo Gomes (Isheriff).",
+  "scripts": {
+    "lint": "node scripts/validate.mjs",
+    "test": "node scripts/test.mjs",
+    "check": "npm run lint && npm test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
