@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://eusheriff.me/schema/projects.schema.json",
+  "type": "object",
+  "required": ["schemaVersion", "projects"],
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "1.0" },
+    "projects": {
+      "type": "array",
+      "minItems": 9,
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "url"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+          "name": { "type": "string", "minLength": 2 },
+          "url": { "type": "string", "format": "uri", "pattern": "^https://" }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
